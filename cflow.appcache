@@ -30,6 +30,13 @@ css/images/icons-svg/carat-u-white.svg
 css/images/icons-svg/delete-white.svg
 css/images/icons-svg/minus-white.svg
 css/images/icons-svg/plus-white.svg
+manifest.json
+res/36/ic_launcher.png
+res/48/ic_launcher.png
+res/72/ic_launcher.png
+res/96/ic_launcher.png
+res/144/ic_launcher.png
+res/192/ic_launcher.png
 
 NETWORK:
 *
