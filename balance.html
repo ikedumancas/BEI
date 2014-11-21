@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="" >
+<html lang="en" ng-app="" manifest="cflow.appcache">
 <head>
 	<meta charset="UTF-8">
 	<title>Cash Flow</title>
@@ -24,22 +24,13 @@
 		<div role="main" class="ui-content" ng-controller="balanceController">
 			<ul class="chart">
 				<li class="bar teal" style="height: 100%;width:100%" title="100">
-					<div class="percent">
-						{{incomes*1 | number}}
-						<span> (100%)</span>
-					</div>
+					<div class="percent">{{incomes*1 | number}} <span>(100%)</span></div>
 					<div class="skill">Total Income</div></li>
 				<li class="bar salmon" style="height: 100%;width:{{((expenses/incomes)*100) | number:2}}%" title="{{expenses*1}}">
-					<div class="percent">
-						{{expensepercentage}} {{expenses*1 | number}}
-						<span> ({{((expenses/incomes)*100) | number:2}}%)</span>
-					</div>
+					<div class="percent">{{expenses*1 | number}} <span>({{((expenses/incomes)*100) | number:2}}%)</span></div>
 					<div class="skill">Expenses</div></li>
 				<li class="bar peach" style="height: 100%;width:{{(((incomes-expenses)/incomes)*100) | number:2}}%" title="{{incomes-expenses}} ">
-					<div class="percent">
-						{{balancepercentage}} {{incomes-expenses | number}}
-						<span> ({{(((incomes-expenses)/incomes)*100) | number:2}}%)</span>
-					</div>
+					<div class="percent">{{incomes-expenses | number}} <span>({{(((incomes-expenses)/incomes)*100) | number:2}}%)</span></div>
 					<div class="skill">Balance</div></li>
 			</ul>
 		</div>

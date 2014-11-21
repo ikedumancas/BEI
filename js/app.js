@@ -79,26 +79,6 @@ function balanceController($scope) {
   var expenses = 0;
   var incomes = 0;
 
-  $scope.incomes = 0;
-  $scope.expenses = 0;
-  
-  // $scope.expensepercentage = function(){
-  //   var pexp = (expenses/incomes)*100;
-  //   if(isNaN(pexp)){
-  //     pexp = 0;
-  //   }
-  //   return pexp;
-  // }
-
-  // $scope.balancepercentage = function(){
-  //   var pbal = (($scope.incomes-$scope.expenses)/$scope.incomes)*100;
-
-  //   if(isNaN(pbal)) {
-  //     pbal=0;
-  //   }
-  //   return 0;
-  // };
-
   db.cashflow.where("cflow").equalsIgnoreCase("income").each(function(income){
     incomes = ((incomes*1) + (income.amount*1))*1;
     
