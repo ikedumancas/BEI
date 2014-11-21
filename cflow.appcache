@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2014-11-21 v1.0.0
+# 2014-11-21 v1.0.1
 balance.html
 expenses.html
 incomes.html
@@ -31,3 +31,5 @@ css/images/icons-svg/delete-white.svg
 css/images/icons-svg/minus-white.svg
 css/images/icons-svg/plus-white.svg
 
+NETWORK:
+*
