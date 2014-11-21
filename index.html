@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="" manifest="cflow.appcache">
+<head>
+	<meta charset="UTF-8">
+	<title>Cash Flow</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<div data-role="navbar" style="text-align:center;" data-type="horizontal">
+				<ul>
+					<li><a href="javascript:location.replace('expenses.html');" data-icon="carat-d" data-transition="none"> Expenses </a></li>
+					<li><a href="javascript:location.replace('incomes.html');" data-icon="carat-u" data-transition="none"> Incomes </a></li>
+					<li><a href="javascript:location.replace('balance.html');" data-icon="bars"  data-transition="none"> Balance </a></li>
+		      	</ul>				
+			</div>
+			<h1>CASH FLOW</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<h2>Welcome to Cash Flow</h2>
+			<p>Cash Flow ni bai! Para di makurat nganu nahurot ang kwarta!</p>
+		</div>		
+	</div>
+	
+	<script src="js/all-plugins.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
