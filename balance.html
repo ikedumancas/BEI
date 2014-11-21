@@ -2,7 +2,7 @@
 <html lang="en" ng-app="" manifest="cflow.appcache">
 <head>
 	<meta charset="UTF-8">
-	<title>Cash Flow</title>
+	<title>BEI</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
@@ -24,7 +24,7 @@
 		<div role="main" class="ui-content" ng-controller="balanceController">
 			<ul class="chart">
 				<li class="bar teal" style="height: 100%;width:100%" title="100">
-					<div class="percent">{{incomes*1 | number}} <span>(100%)</span></div>
+					<div class="percent">{{incomes*1 | number}} <span>(100.00%)</span></div>
 					<div class="skill">Total Income</div></li>
 				<li class="bar salmon" style="height: 100%;width:{{((expenses/incomes)*100) | number:2}}%" title="{{expenses*1}}">
 					<div class="percent">{{expenses*1 | number}} <span>({{((expenses/incomes)*100) | number:2}}%)</span></div>
